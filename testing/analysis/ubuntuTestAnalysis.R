@@ -1,6 +1,6 @@
 library(tidyverse)
-setwd('~/Documents/syncthing/school/compArch/final/dataAnalysis/ubuntuTest')
-results <- read_csv("combinedResults.csv")
+setwd('~/Documents/github/cpuvgpu/testing/data')
+results <- read_csv("ubuntu.csv")
 
 restart <- c(1, 3, 11, 12, 15, 16, 17, 18, 19, 20, 22) # Full kernal restart between tests
 reseed <- c(4, 8, 9, 10, 13, 14, 21, 22) # reseed between tests

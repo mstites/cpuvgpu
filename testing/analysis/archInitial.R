@@ -1,6 +1,6 @@
 library(tidyverse)
-setwd('~/Documents/syncthing/school/compArch/final/dataAnalysis/')
-data <- read_csv('log.csv')
+setwd('~/Documents/github/cpuvgpu/testing/data')
+data <- read_csv('arch.csv')
 
 num <- 10
 name <- paste("CPU vs GPU -", num, "Clusters")
