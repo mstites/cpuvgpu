@@ -7,8 +7,12 @@ Tests were ran using the [kmeans_pytorch](https://github.com/subhadarship/kmeans
 * 32GB 3200MHz RAM
 * GTX 1070
 
+
 ## Results
 For a full results analysis, please see the Zine as posted above. But in short, the results were not as expected. On the Arch based system, the results were extremely inconsistent. One run to another would be an order of magnitude off. On the Ubuntu system, things were much more consistent. However, tight groupings only occured with full Python kernal restarts between testing. Strangly enough, reseeding the numpy random number also seemed to affect the groups. But more testing would be needed to verify this.
+
+
+Arch tests were done with variances across clusters, however cluster sizes weren't found to be a great way of testing CPU vs GPU. The main way to test was simply data size with constant clusters and data depth. 
 
 ## Contributing
 All code and results can be found in the testing folder. Tests should be able to be ran on any system with a CUDA supported GPU and any modern x86 CPU.
